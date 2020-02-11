@@ -33,15 +33,26 @@ int copie(int *tab, int n,int *tab2){
 	}
 }
 
+int* unsurdeux(int *tab, int n){
+	int *tab2;
+	int a=0;
+	tab2 = malloc(sizeof(int) * 10);
+	for (int i = 0; i < n; i++) {
+		if (i%2==0){
+			tab2[a] = tab[i];
+			a++;
+		}
+	}
+	return tab2;
+}
+
 void main(){
  	int t[10]={2,4,4,14,3,75,1,2,4,4};
 	/*int max, min;
 	minmax(t, 10, &min, &max);
 	printf(" max = %i, min = %i\n", max, min);*/
-	int *p;
-	p = malloc(sizeof(int) * 10);
-	copie(t, 10, p);
-	for (int i = 0; i < 10; ++i){
+	int *p=unsurdeux(t, 10);
+	for (int i = 0; i < ; ++i){
 		printf("%d |", *(p+i));
 	}
 	free(p);
