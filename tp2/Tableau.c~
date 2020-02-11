@@ -1,0 +1,11 @@
+#include "stdio.h"
+
+int maximum(int *t, int n){
+  int max=*t;
+  for(int i=1;i<=n;i++){
+    if(max<*t+i){
+      max=*t+i;
+    }
+  }
+  return max;
+}

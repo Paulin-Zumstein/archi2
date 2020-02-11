@@ -1,0 +1,24 @@
+ex 1
+
+#include "stdio.h"
+
+int maximum(int *t, int n){
+  int max=t[0];
+  for(int i=1;i<=n;i++){
+    if(max<t[i]){
+      max=t[i];
+    }
+  }
+  return max;
+}
+void main(){
+  int t[3];
+  t[0]=4;
+  t[1]=7;
+  t[2]=3;
+  printf("%i \n" ,maximum(t,3));
+}
+
+ex 2
+
+

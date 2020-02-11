@@ -1,0 +1,36 @@
+#include <stdio.h>
+
+/*#define MESSAGE "Super\n"
+int dbl(int n){
+  return 2*n;
+}
+int main() {
+  //printf("rsultat: %i\n", dbl(4));
+	int tab[3];
+	tab[0]=1;
+	tab[1]=2;
+	printf("%i\n",tab[0]);
+	printf("%i\n",tab[1]);
+	printf("%i\n",tab[2]);
+	printf("%i\n",tab[3]);
+}
+#include <stdio.h>
+int main() {
+	int a, *b;
+	a = 12;
+	b = &a;
+	*b = a + 1;
+	printf("a = %i, b = %lu\n", a, (long unsigned) b);
+}
+int main(){
+	float tab[2];
+	printf("%lu\n", (long unsigned)&tab[0]);
+	printf("%lu\n", (long unsigned)&tab[1]);
+	printf("%lu\n", (long unsigned)&tab[2]);
+}*/
+#include <stdio.h>
+int main() {
+int t[2];
+printf("Premiere adresse: %i, seconde adresse: %i\n", (int)t,
+(int)(t+1));
+}
