@@ -52,7 +52,7 @@ void main(){
 	minmax(t, 10, &min, &max);
 	printf(" max = %i, min = %i\n", max, min);*/
 	int *p=unsurdeux(t, 10);
-	for (int i = 0; i < ; ++i){
+	for (int i = 0; i < 5; ++i){
 		printf("%d |", *(p+i));
 	}
 	free(p);
